@@ -10,7 +10,7 @@ function munipulateArray(){
 		return new Promise((resolve) => {
 			setTimeout(() => {
 				const evenNum = array.filter(num => num%2===0);
-				document.getElementById('output').textContent = `Filtered array`
+				document.getElementById('output').textContent = `Filtered array : ${evenNum}`
 				resolve(evenNum);
 			}, 1000);
 		})
@@ -19,7 +19,7 @@ function munipulateArray(){
 		return new Promise((resolve) => {
 			setTimeout(() => {
 				const multipliedNum = evenNum.map(num=>num*2);
-				document.getElementById('output').textContent = `Multiplied`
+				document.getElementById('output').textContent = `Multiplied array : ${multipliedNum}`
 				resolve(multipliedNum);
 			}, 2000)
 		})
